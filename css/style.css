@@ -1,0 +1,100 @@
+/*Ajout d'un arrière plan à la page*/
+body{
+    margin: 0;
+    background-image: url("../img/background.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*Parametrage du conteneur global pour que
+ *le conteneur des éléments du chat soit centré
+ */
+.container_global {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+ *Conteneur des éléments du chat
+ *On le défini à 800x600 pour respecter les dimensions demandées
+ *On ajoute au passage une police aux différents éléments
+ */
+.container_chat {
+    width: 800px;
+    height: 600px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: "Agency FB";
+    font-size: 1.2em;
+
+}
+
+/*
+ *Conteneur des messages, on lui fait occuper
+ *la majeure partie de l'espace alloué au chat
+ *et on rajoute une couleur de fond
+ */
+.container_messages {
+    width: 100%;
+    height: 90%;
+    background-color: burlywood;
+}
+
+/*
+ *On défini le conteneur des éléments du bas
+ *de façon à ce qu'ils soient alignés dans la direction voulue
+ */
+.container_pseudo_saisie {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+/*
+ *Étant donné que les balises h1, input et button ne
+ *sont utilisées nul part ailleurs, pas besoin de leur
+ *affecter des id spécifiques
+ */
+h1 {
+    width: 15%;
+    height: 100%;
+    font-size: 1em;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+input {
+    width: 70%;
+    height: 90%;
+    text-align: center;
+    background-color: darkgrey;
+    font-family: "Agency FB";
+    font-size: 1.2em;
+    color: antiquewhite;
+}
+
+button {
+    width: 15%;
+    height: 100%;
+    text-align: center;
+}
+
+/*
+ *Ajustements pour que l'affichage des messages soit propre
+ */
+#messages {
+    width: 100%;
+    height: 95%;
+    align-content: center;
+    word-wrap: break-word;
+    text-align: left;
+    overflow-y: auto;
+}
