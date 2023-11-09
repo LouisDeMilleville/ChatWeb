@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- Ajout des classes JS annexe avant le fichier JS principal -->
+    <script src="js/Connexion.js"></script>
+    <script src="js/LoadMessages.js"></script>
+    <script src="js/Websocket.js"></script>
+</head>
+<body>
+
+    <!-- Conteneur regroupant l'intégralité des éléments liés au chat -->
+    <div class="container_global">
+        <div class="container_chat">
+            <div class="container_messages">
+                <!-- Paragraphe dédié à l'affichage des messages du chat -->
+                <p id="messages"></p>
+            </div>
+            <!-- Conteneur regroupant les éléments importants du chat hors messages -->
+            <div class="container_pseudo_saisie">
+                <h1 id="pseudo">Pseudo</h1>
+                <label for="message"></label><input id="message" placeholder="Saisissez votre message ici..."/>
+                <button id="bouton_envoi">Envoyer</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ajout du fichier JS principal après avoir chargé tous les éléments de la page -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
